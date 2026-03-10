@@ -30,13 +30,41 @@
 
 ## 安装
 
+### 方式一：直接复制命令安装（推荐）
+
+这是最简单的安装方式。
+
+1. 在 Mac 上打开“终端”。
+如果你不知道在哪里打开，可以按 `Command + Space`，输入“终端”，然后回车。
+2. 复制下面这整段命令。
+3. 粘贴到终端里。
+4. 按一次回车，等待下载完成。
+5. 重启 Claude Code。
+
 ```bash
 mkdir -p ~/.claude/commands
 curl -L https://raw.githubusercontent.com/rongmiao926-hub/claude-tailor-resume-command/main/.claude/commands/tailor-resume.md \
   -o ~/.claude/commands/tailor-resume.md
 ```
 
-如果命令没有立刻出现，重启 Claude Code。
+这段命令会自动把 `tailor-resume.md` 放到你的 `~/.claude/commands/` 目录里。
+
+### 方式二：手动安装
+
+如果你不想复制命令，也可以手动安装：
+
+1. 点击这个仓库右上角的 `Code`。
+2. 选择 `Download ZIP` 下载压缩包。
+3. 解压后，打开里面的 `.claude/commands/` 文件夹。
+4. 把其中的 `tailor-resume.md` 复制到你电脑上的 `~/.claude/commands/` 目录里。
+5. 重启 Claude Code。
+
+如果你不知道 `~/.claude/commands/` 在哪里：
+
+1. 在 Finder 顶部菜单点 `前往`。
+2. 选择 `前往文件夹...`。
+3. 输入 `~/.claude/commands/`。
+4. 把 `tailor-resume.md` 文件拖进去。
 
 ## 小白友好用法
 
