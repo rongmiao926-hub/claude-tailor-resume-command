@@ -40,24 +40,24 @@ If the command does not appear immediately, restart Claude Code.
 
 ## Beginner-Friendly Usage
 
-After installation, the only thing you need to remember is: start with `/tailor-resume`, then tell Claude where your resumes are and what JD you want to target.
+After installation, the only thing you need to remember is: start with `/tailor-resume`, then tell Claude where your resumes are and where the JD is, as if you were chatting normally.
 
 For example:
 
 ```text
-/tailor-resume ~/Documents/resumes Please build one experience pool from all my resume versions, compare it against this JD, ask me about any missing evidence, and generate a targeted Word resume.
+/tailor-resume Help me tailor my resume. My resumes are in ~/Documents/resumes/. Please build one experience pool from all my resume versions, compare it against this JD, ask me about any missing evidence, and generate a targeted Word resume.
 ```
 
 ```text
-/tailor-resume ~/Documents/resumes https://example.com/job/12345
+/tailor-resume Help me tailor my resume. My resumes are in ~/Documents/resumes/, and the JD link is here: https://example.com/job/12345
 ```
 
 ```text
-/tailor-resume ~/Documents/resumes ~/Documents/jd-screenshots/
+/tailor-resume Help me tailor my resume. My resumes are in ~/Documents/resumes/, and all JD screenshots are in ~/Documents/jd-screenshots/
 ```
 
 ```text
-/tailor-resume ~/Documents/resumes Please reuse the formatting from ~/Documents/resumes/final-resume.docx and tailor my resume for the JD below: ...
+/tailor-resume Help me tailor my resume. My resumes are in ~/Documents/resumes/. Please reuse the formatting from ~/Documents/resumes/final-resume.docx and tailor my resume for the JD below: ...
 ```
 
 ## Notes

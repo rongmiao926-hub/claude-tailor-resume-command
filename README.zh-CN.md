@@ -40,24 +40,24 @@ curl -L https://raw.githubusercontent.com/rongmiao926-hub/claude-tailor-resume-c
 
 ## 小白友好用法
 
-装好以后，你只需要记住一件事：先写 `/tailor-resume`，然后把“简历路径”和“JD”告诉它。
+装好以后，你只需要记住一件事：先写 `/tailor-resume`，然后像聊天一样告诉它“帮我改简历，我的简历放在哪，JD 放在哪”。
 
 你可以像平时聊天一样写：
 
 ```text
-/tailor-resume ~/Documents/resumes 这是一个增长运营岗位的 JD，请从我所有简历里找最匹配的经历，缺什么就问我，然后帮我生成一份一页中文简历。
+/tailor-resume 帮我改简历。我的简历放在 ~/Documents/resumes/，这是一个增长运营岗位的 JD。请从我所有简历里找最匹配的经历，缺什么就问我，然后帮我生成一份一页中文简历。
 ```
 
 ```text
-/tailor-resume ~/Documents/resumes https://example.com/job/12345
+/tailor-resume 帮我改简历。我的简历放在 ~/Documents/resumes/，JD 链接放在这里：https://example.com/job/12345
 ```
 
 ```text
-/tailor-resume ~/Documents/resumes ~/Documents/jd-screenshots/
+/tailor-resume 帮我改简历。我的简历放在 ~/Documents/resumes/，JD 截图都放在 ~/Documents/jd-screenshots/
 ```
 
 ```text
-/tailor-resume ~/Documents/resumes 请沿用 ~/Documents/resumes/我最满意的简历.docx 的排版，然后针对下面这段 JD 改写：...
+/tailor-resume 帮我改简历。我的简历放在 ~/Documents/resumes/，请沿用 ~/Documents/resumes/我最满意的简历.docx 的排版，然后针对下面这段 JD 改写：...
 ```
 
 ## 说明
