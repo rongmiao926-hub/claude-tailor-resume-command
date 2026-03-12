@@ -1,5 +1,19 @@
 # Tailor Resume for Claude
 
+> ✨ 把多版本简历和一个或多个 JD，整理成真正为目标岗位定制的 Word 简历。
+
+## 🚀 三步上手
+
+1. 先安装 Claude Code
+2. 再安装这个 `tailor-resume` 命令
+3. 直接告诉它：简历放在哪，JD 放在哪，请它帮你改简历
+
+例如：
+
+```text
+/tailor-resume 帮我改简历。我的简历放在 ~/Documents/resumes/，JD 放在 ~/Documents/jds/，请先整理经历池，再生成一份针对这个岗位的中文 Word 简历。
+```
+
 ## ⚠️ 先说明
 
 这不是 Claude Code 本体，而是一个要安装到 Claude Code 里面使用的自定义命令。
@@ -24,7 +38,7 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 如果你用的是 Windows 或其他环境，最稳妥的方式是直接跟着 Anthropic 官方 Quickstart 走。
 
-这是一个给 Claude Code 用的自定义命令，文件位置是 `.claude/commands/tailor-resume.md`。
+这是一个给 Claude Code 用的自定义命令，文件位置是 `.claude/commands/tailor-resume.md`。🎯
 
 它的目标不是只帮你“修饰一份已有简历”，而是把整个定制简历流程串起来：先吸收你所有版本的简历，建立经历池；再批量读取一个或多个 JD；然后找出你经历和岗位要求之间的 gap，主动追问你可能遗漏的相关经历；最后按目标 JD 重写内容，并输出新的 Word 简历。
 
