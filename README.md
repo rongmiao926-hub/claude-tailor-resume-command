@@ -9,6 +9,30 @@
 
 # Tailor Resume for Claude
 
+## ⚠️ 先说明
+
+这不是 Claude Code 本体，而是一个要安装到 Claude Code 里面使用的自定义命令。
+
+也就是说，你需要先装好 Claude Code，再按照下面的步骤安装这个命令。
+
+## 🖥️ 使用前先安装 Claude Code
+
+如果你还没有安装 Claude Code，可以先这样做：
+
+1. 打开 Anthropic 官方文档：[Claude Code Quickstart](https://code.claude.com/docs/en/quickstart)
+2. 按官方推荐方式安装 Claude Code。
+3. 如果你用的是 macOS、Linux 或 WSL，官方当前推荐的原生安装命令是：
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+4. 安装完成后，在终端里输入 `claude`。
+5. 按提示登录你的 Claude 账号。
+6. 登录成功后，再继续安装下面这个 `tailor-resume` 命令。
+
+如果你用的是 Windows 或其他环境，最稳妥的方式是直接跟着 Anthropic 官方 Quickstart 走。
+
 这是一个给 Claude Code 用的自定义命令，文件位置是 `.claude/commands/tailor-resume.md`。
 
 它的目标不是只帮你“修饰一份已有简历”，而是把整个定制简历流程串起来：先吸收你所有版本的简历，建立经历池；再批量读取一个或多个 JD；然后找出你经历和岗位要求之间的 gap，主动追问你可能遗漏的相关经历；最后按目标 JD 重写内容，并输出新的 Word 简历。
@@ -37,9 +61,9 @@
 
 它会输出 Word 文档。如果你提供多份 `.docx` 简历，还可以选一份你最满意的版式作为样式参考，新简历会尽量复用那份排版。
 
-## 安装
+## 🔧 再安装这个命令
 
-### 方式一：直接复制命令安装（推荐）
+### 方式一：直接复制命令安装（推荐） 🚀
 
 这是最简单的安装方式。
 
@@ -58,7 +82,7 @@ curl -L https://raw.githubusercontent.com/rongmiao926-hub/claude-tailor-resume-c
 
 这段命令会自动把 `tailor-resume.md` 放到你的 `~/.claude/commands/` 目录里。
 
-### 方式二：手动安装
+### 方式二：手动安装 📁
 
 如果你不想复制命令，也可以手动安装：
 
@@ -75,7 +99,7 @@ curl -L https://raw.githubusercontent.com/rongmiao926-hub/claude-tailor-resume-c
 3. 输入 `~/.claude/commands/`。
 4. 把 `tailor-resume.md` 文件拖进去。
 
-## 小白友好用法
+## 💬 小白友好用法
 
 装好以后，你只需要记住一件事：先写 `/tailor-resume`，然后像聊天一样告诉它“帮我改简历，我的简历放在哪，JD 放在哪”。
 
@@ -97,7 +121,7 @@ curl -L https://raw.githubusercontent.com/rongmiao926-hub/claude-tailor-resume-c
 /tailor-resume 帮我改简历。我的简历放在 ~/Documents/resumes/，请沿用 ~/Documents/resumes/我最满意的简历.docx 的排版，然后针对下面这段 JD 改写：...
 ```
 
-## 说明
+## 📝 说明
 
 - 只提供 PDF 简历时，通常只能复用内容，不能完整保留原排版。
 - 如果一次给很多 JD，它会先识别岗位列表，再让你确认是否全部生成。
